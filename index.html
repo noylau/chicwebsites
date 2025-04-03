@@ -89,26 +89,125 @@
             <div class="md:w-1/2 flex justify-center">
                 <div class="form-container bg-white rounded-lg p-8 w-full max-w-md">
                     <h3 class="text-2xl font-bold text-dark mb-6 text-center">Request Free Sample</h3>
-                  <!-- 修改表单标签 -->
+    <!-- 修改表单标签，添加 Netlify 支持 -->
 <form 
     id="inquiryForm" 
     name="contact" 
     method="POST" 
-    data-netlify="true" 
-    netlify-honeypot="bot-field" 
+    data-netlify="true"
+    netlify-honeypot="bot-field"
     class="space-y-4"
 >
-    <!-- 添加隐藏的反垃圾字段 -->
+    <!-- 隐藏的反垃圾字段（Netlify 必加） -->
     <div class="hidden">
-        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+        <label>Leave this empty: <input name="bot-field" /></label>
     </div>
 
-    <!-- 原有表单字段保持不变 -->
+    <!-- 1. 姓名（保持原字段） -->
     <div>
-        <label for="name" class="block text-gray-700 mb-1">Your Name*</label>
-        <input type="text" id="name" name="name" required class="...">
+        <label for="name" class="block text-gray-700 mb-1 font-medium">Your Name*</label>
+        <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200"
+            placeholder="Full name"
+        >
     </div>
-    <!-- 其他字段保持原样 -->
+
+    <!-- 2. 邮箱（保持原字段） -->
+    <div>
+        <label for="email" class="block text-gray-700 mb-1 font-medium">Email*</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200"
+            placeholder="example@email.com"
+        >
+    </div>
+
+    <!-- 3. 公司名称（保持原字段） -->
+    <div>
+        <label for="company" class="block text-gray-700 mb-1 font-medium">Company Name</label>
+        <input 
+            type="text" 
+            id="company" 
+            name="company"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200"
+            placeholder="Optional"
+        >
+    </div>
+
+    <!-- 4. 电话（保持原字段） -->
+    <div>
+        <label for="phone" class="block text-gray-700 mb-1 font-medium">WhatsApp/Phone*</label>
+        <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200"
+            placeholder="+86 123 4567 8910"
+        >
+    </div>
+
+    <!-- 5. 产品类别（保持原下拉框） -->
+    <div>
+        <label for="product" class="block text-gray-700 mb-1 font-medium">Product Interest</label>
+        <select 
+            id="product" 
+            name="product"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200"
+        >
+            <option value="">Select product category</option>
+            <option value="dresses">Dresses</option>
+            <option value="tops">Tops & Blouses</option>
+            <option value="skirts">Skirts</option>
+            <option value="pants">Pants & Jeans</option>
+            <option value="outerwear">Outerwear</option>
+            <option value="activewear">Activewear</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+
+    <!-- 6. 订单数量（保持原下拉框） -->
+    <div>
+        <label for="quantity" class="block text-gray-700 mb-1 font-medium">Estimated Order Quantity</label>
+        <select 
+            id="quantity" 
+            name="quantity"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200"
+        >
+            <option value="">Select quantity range</option>
+            <option value="100-500">100-500 pcs</option>
+            <option value="500-1000">500-1,000 pcs</option>
+            <option value="1000-5000">1,000-5,000 pcs</option>
+            <option value="5000+">5,000+ pcs</option>
+        </select>
+    </div>
+
+    <!-- 7. 附加要求（保持原文本域） -->
+    <div>
+        <label for="message" class="block text-gray-700 mb-1 font-medium">Additional Requirements</label>
+        <textarea 
+            id="message" 
+            name="message" 
+            rows="3"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200"
+            placeholder="Special requests or details"
+        ></textarea>
+    </div>
+
+    <!-- 提交按钮（优化样式） -->
+    <button 
+        type="submit" 
+        class="w-full bg-primary hover:bg-red-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-[1.02] shadow-md hover:shadow-lg"
+    >
+        <i class="fas fa-paper-plane mr-2"></i> Submit Inquiry
+    </button>
 </form>
                     <p class="text-sm text-gray-500 mt-4">We'll respond within 24 hours with pricing and details.</p>
                 </div>
