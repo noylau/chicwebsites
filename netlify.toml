@@ -1,0 +1,8 @@
+[build]
+  publish = "." # 或者你的构建输出目录，如 "dist"
+
+[[plugins]]
+  package = "@netlify/plugin-visual"
+
+[build.environment]
+  NODE_VERSION = "16" # 或更高版本
