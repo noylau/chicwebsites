@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main # 或master,取决于你的默认分支名
+
+media_folder: "images/uploads" # 媒体文件存储位置
+public_folder: "/images/uploads" # 公共访问路径
+
+collections:
+  - name: "pages" # 用于URL的名称 (/admin/collections/pages)
+    label: "Pages" # UI界面显示的名称
+    folder: "pages" # 存储文件的文件夹
+    create: true # 允许用户创建新文件
+    slug: "{{slug}}" # 文件名模板
+    fields: # 字段
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
