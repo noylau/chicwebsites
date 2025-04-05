@@ -1,0 +1,26 @@
+{
+  "components": {
+    "text": {
+      "selector": "[data-visual-edit='text']",
+      "settings": {
+        "content": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    },
+    "image": {
+      "selector": "[data-visual-edit='image']",
+      "settings": {
+        "src": {
+          "type": "image",
+          "default": ""
+        },
+        "alt": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    }
+  }
+}
