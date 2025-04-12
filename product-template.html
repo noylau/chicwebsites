@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Floral Summer Dress",
+  "image": ["/images/dress-1.jpg", "/images/dress-2.jpg"],
+  "description": "Premium quality summer dress...",
+  "brand": {
+    "@type": "Brand",
+    "name": "Chicupup"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "29.99"
+  }
+}
+</script>
+    <!-- 复制主站head内容 -->
+    <title>Product Details | Chicupup</title>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- 复制主站Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">...</header>
+
+    <!-- 产品详情 -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <!-- 面包屑导航 -->
+            <nav class="text-gray-600 mb-8">
+                <a href="/collections.html" class="hover:text-primary">Collections</a> 
+                <span class="mx-2">/</span>
+                <span id="product-category"></span>
+            </nav>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- 图片轮播 -->
+                <div class="product-gallery">
+                    <div class="main-image mb-4">
+                        <img id="main-image" 
+                             class="w-full h-96 object-cover rounded-lg shadow-md">
+                    </div>
+                    <div class="thumbnail-grid grid grid-cols-4 gap-2">
+                        <!-- 动态生成缩略图 -->
+                    </div>
+                </div>
+
+                <!-- 产品信息 -->
+                <div class="product-info">
+                    <h1 class="text-3xl font-bold text-dark mb-4" id="product-title"></h1>
+                    
+                    <!-- 标签 -->
+                    <div class="flex gap-2 mb-6" id="product-labels"></div>
+
+                    <!-- 价格 -->
+                    <p class="text-2xl text-primary font-bold mb-6">
+                        $<span id="product-price"></span>
+                    </p>
+
+                    <!-- 规格选择 -->
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-bold mb-2">Color Options</h3>
+                            <div class="flex gap-2" id="color-selector"></div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-bold mb-2">Select Size</h3>
+                            <div class="flex flex-wrap gap-2" id="size-selector"></div>
+                        </div>
+                    </div>
+
+                    <!-- 询盘按钮 -->
+                    <button onclick="openInquiry()"
+                            class="mt-8 w-full bg-primary hover:bg-red-600 text-white py-3 px-6 rounded-full transition duration-300">
+                        <i class="fas fa-envelope mr-2"></i>Request Quotation
+                    </button>
+
+                    <!-- 详细信息 -->
+                    <div class="mt-8 space-y-4">
+                        <div>
+                            <h3 class="font-bold">Material Composition</h3>
+                            <p id="product-material"></p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Payment Terms</h3>
+                            <p id="payment-terms"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 复制主站Footer -->
+    <footer class="bg-dark text-white py-12">...</footer>
+
+    <script>
+        // 获取产品ID
+        const productId = window.location.pathname.split('-')[1].replace('.html','')
+
+        // 加载产品数据
+        fetch('/data/products.json')
+            .then(res => res.json())
+            .then(products => {
+                const product = products.find(p => p.id == productId)
+                if(!product) window.location = '/404.html'
+
+                // 填充数据
+                document.title = `${product.title} | Chicupup`
+                document.getElementById('product-title').textContent = product.title
+                document.getElementById('product-price').textContent = product.price
+                document.getElementById('product-material').textContent = product.material
+                document.getElementById('payment-terms').textContent = product.payment_terms
+                document.getElementById('product-category').textContent = product.category
+
+                // 图片处理
+                const mainImg = document.getElementById('main-image')
+                mainImg.src = product.images[0]
+                const thumbnails = document.querySelector('.thumbnail-grid')
+                product.images.forEach(img => {
+                    thumbnails.innerHTML += `
+                        <img src="${img}" 
+                             class="cursor-pointer h-20 object-cover rounded hover:opacity-75"
+                             onclick="mainImg.src='${img}'">
+                    `
+                })
+
+                // 颜色选择
+                const colorSelector = document.getElementById('color-selector')
+                product.colors.forEach(color => {
+                    colorSelector.innerHTML += `
+                        <div class="w-8 h-8 rounded-full border-2 border-gray-200 cursor-pointer"
+                             style="background-color: ${color}"
+                             onclick="this.classList.toggle('border-primary')">
+                        </div>
+                    `
+                })
+
+                // 尺寸选择
+                const sizeSelector = document.getElementById('size-selector')
+                product.sizes.forEach(size => {
+                    sizeSelector.innerHTML += `
+                        <div class="px-4 py-2 border rounded cursor-pointer hover:border-primary"
+                             onclick="this.classList.toggle('bg-primary', 'text-white')">
+                            ${size}
+                        </div>
+                    `
+                })
+
+                // 标签
+                const labels = document.getElementById('product-labels')
+                product.labels.forEach(label => {
+                    labels.innerHTML += `
+                        <span class="px-2 py-1 bg-secondary text-white text-sm rounded">
+                            ${label}
+                        </span>
+                    `
+                })
+            })
+
+        function openInquiry() {
+            const productName = document.getElementById('product-title').textContent
+            window.location.href = `https://wa.me/8615604063085?text=Inquiry%20about:%20${encodeURIComponent(productName)}`
+        }
+    </script>
+</body>
+</html>
