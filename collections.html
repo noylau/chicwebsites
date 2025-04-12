@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 复制主站head内容 -->
+    <title>Product Collections | Chicupup</title>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- 复制主站Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">...</header>
+
+    <!-- 分类导航 -->
+    <nav class="bg-gray-100 py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap gap-4" id="category-nav">
+                <!-- 动态生成分类 -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- 产品集合展示 -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-dark mb-8" id="collection-title">All Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="products-grid">
+                <!-- 动态加载产品 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 复制主站Footer -->
+    <footer class="bg-dark text-white py-12">...</footer>
+
+    <script>
+        // 动态加载数据
+        fetch('/data/products.json')
+            .then(res => res.json())
+            .then(products => {
+                // 生成分类导航
+                const categories = [...new Set(products.map(p => p.category))]
+                const nav = document.getElementById('category-nav')
+                categories.forEach(cat => {
+                    nav.innerHTML += `
+                        <a href="#${cat.toLowerCase()}" 
+                           class="px-4 py-2 bg-white rounded-full hover:bg-primary hover:text-white transition-colors"
+                           onclick="filterProducts('${cat}')">
+                            ${cat}
+                        </a>
+                    `
+                })
+
+                // 初始加载全部产品
+                renderProducts(products)
+            })
+
+        function filterProducts(category) {
+            fetch('/data/products.json')
+                .then(res => res.json())
+                .then(products => {
+                    const filtered = category ? 
+                        products.filter(p => p.category === category) : 
+                        products
+                    document.getElementById('collection-title').textContent = 
+                        category ? `${category} Collection` : "All Products"
+                    renderProducts(filtered)
+                })
+        }
+
+        function renderProducts(products) {
+            const grid = document.getElementById('products-grid')
+            grid.innerHTML = products.map(product => `
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-64 bg-gray-200 relative">
+                        <img src="${product.images[0]}" 
+                             alt="${product.title}" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark">${product.title}</h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-primary font-bold">$${product.price}</span>
+                            <a href="/product-${product.id}.html" 
+                               class="bg-secondary text-white px-4 py-2 rounded-full hover:bg-teal-600">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `).join('')
+        }
+    </script>
+</body>
+</html>
