@@ -23,5 +23,15 @@
   status = 404
   force = false
 
-  [build]
-  command = "node generate-products.js && npm run build"
+
+[[redirects]]
+  from = "/collections/*"
+  to = "/collections/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/products/*"
+  to = "/products/:splat.html"
+  status = 200
+
+# 其他配置...
