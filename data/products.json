@@ -30,3 +30,12 @@
     "payment_terms": "50% deposit, balance after QC approval"
   }
 ]
+
+[{
+  "id": "elegant-evening-dress",
+  "title": "Elegant Evening Dress",
+  "category": "Dresses",
+  "price": 29,
+  "images": ["dress-main.jpg", "dress-detail.jpg"],
+  "description": "Handmade silk evening gown..."
+}]
