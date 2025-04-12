@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP09799B5C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HP09799B5C');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Dresses Collection - Chicupup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B6B',
+                        secondary: '#4ECDC4',
+                        dark: '#292F36',
+                        light: '#F7FFF7'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        input, textarea, select {
+            color: black !important;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header with Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-tshirt text-primary text-3xl mr-2"></i>
+                <span class="text-2xl font-bold text-dark">Chic<span class="text-primary">upup</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="/" class="text-dark hover:text-primary font-medium">Home</a>
+                <a href="#products" class="text-dark hover:text-primary font-medium">Products</a>
+                <a href="/#about" class="text-dark hover:text-primary font-medium">About Us</a>
+                <a href="/#services" class="text-dark hover:text-primary font-medium">Services</a>
+                <a href="/#contact" class="text-dark hover:text-primary font-medium">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="mailto:anna@chicupup.com" class="hidden md:flex items-center text-dark hover:text-primary mr-4">
+                    <i class="fas fa-envelope mr-2"></i>
+                    anna@chicupup.com
+                </a>
+                <a href="mailto:info@chicupup.com" class="hidden md:flex items-center text-dark hover:text-primary mr-4">
+                    <i class="fas fa-envelope mr-2"></i>
+                    info@chicupup.com
+                </a>
+                <a href="tel:+8615604063085" class="hidden md:flex items-center text-dark hover:text-primary">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    +86 15604063085
+                </a>
+                <button class="md:hidden text-dark" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="/" class="text-dark hover:text-primary font-medium py-2">Home</a>
+                <a href="#products" class="text-dark hover:text-primary font-medium py-2">Products</a>
+                <a href="/#about" class="text-dark hover:text-primary font-medium py-2">About Us</a>
+                <a href="/#services" class="text-dark hover:text-primary font-medium py-2">Services</a>
+                <a href="/#contact" class="text-dark hover:text-primary font-medium py-2">Contact</a>
+                <div class="flex flex-col space-y-2 pt-2 border-t border-gray-200">
+                    <a href="mailto:anna@chicupup.com" class="flex items-center text-dark hover:text-primary">
+                        <i class="fas fa-envelope mr-2"></i>
+                        anna@chicupup.com
+                    </a>
+                    <a href="mailto:info@chicupup.com" class="flex items-center text-dark hover:text-primary">
+                        <i class="fas fa-envelope mr-2"></i>
+                        info@chicupup.com
+                    </a>
+                    <a href="tel:+8615604063085" class="flex items-center text-dark hover:text-primary">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        +86 15604063085
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Collection Header -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-dark mb-8 text-center">Fashion Dresses Collection</h1>
+            <p class="text-center text-gray-600 mb-8">Browse our latest dress collection. For customization needs, please contact us.</p>
+        </div>
+
+            <!-- Products Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1612336307429-8a898d10e223?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Elegant Evening Dress" class="w-full h-96 object-cover">
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm">New</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Elegant Evening Dress</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Black</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Red</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Navy</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">XS</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">S</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">M</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">L</span>
+                        </div>
+                        <button onclick="openInquiryForm('Elegant Evening Dress')" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1483&q=80" alt="Summer Floral Dress" class="w-full h-96 object-cover">
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm">New</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Summer Floral Dress</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">White</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Pink</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Blue</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">S</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">M</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">L</span>
+                        </div>
+                        <button onclick="openInquiryForm('Summer Floral Dress')" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1446&q=80" alt="Casual Maxi Dress" class="w-full h-96 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Casual Maxi Dress</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Green</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Brown</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">M</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">L</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">XL</span>
+                        </div>
+                        <button onclick="openInquiryForm('Casual Maxi Dress')" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1550639525-c97d455acf70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1326&q=80" alt="Party Cocktail Dress" class="w-full h-96 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Party Cocktail Dress</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Black</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Gold</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Silver</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">XS</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">S</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">M</span>
+                        </div>
+                        <button onclick="openInquiryForm('Party Cocktail Dress')" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1588&q=80" alt="Wrap Midi Dress" class="w-full h-96 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Wrap Midi Dress</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Red</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Navy</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Purple</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">S</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">M</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">L</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">XL</span>
+                        </div>
+                        <button onclick="openInquiryForm('Wrap Midi Dress')" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1623609163859-ca93c959b98a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1586&q=80" alt="Bohemian Maxi Dress" class="w-full h-96 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Bohemian Maxi Dress</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">White</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Beige</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">S</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">M</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">L</span>
+                        </div>
+                        <button onclick="openInquiryForm('Bohemian Maxi Dress')" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1530&q=80" alt="A-Line Mini Dress" class="w-full h-96 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">A-Line Mini Dress</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Pink</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Blue</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Yellow</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">XS</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">S</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">M</span>
+                        </div>
+                        <button onclick="openInquiryForm('A-Line Mini Dress')" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1562137369-1a1a0bc66744?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Shift Work Dress" class="w-full h-96 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Shift Work Dress</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Black</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Gray</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Navy</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">S</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">M</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">L</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">XL</span>
+                        </div>
+                        <button onclick="openInquiryForm('Shift Work Dress')" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Inquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1434&q=80" alt="Pleated Party Dress" class="w-full h-96 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Pleated Party Dress</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Red</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Purple</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Green</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">XS</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">S</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">M</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">L</span>
+                        </div>
+                        <button onclick="openInquiryForm('Pleated Party Dress')" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production Process Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-dark text-center mb-8">Our Production Process</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">From your initial inquiry to final product delivery, we maintain strict quality control at every step to ensure the highest quality service and products.</p>
+            <div class="flex flex-wrap justify-between items-center max-w-4xl mx-auto text-center">
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 mb-8">
+                    <div class="flex flex-col items-center">
+                        <i class="fas fa-comments text-primary text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-dark mb-2">Inquiry</h3>
+                        <p class="text-sm text-gray-600">Understanding your needs</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block text-primary"><i class="fas fa-chevron-right"></i></div>
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 mb-8">
+                    <div class="flex flex-col items-center">
+                        <i class="fas fa-pencil-alt text-primary text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-dark mb-2">Design</h3>
+                        <p class="text-sm text-gray-600">Creating custom solutions</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block text-primary"><i class="fas fa-chevron-right"></i></div>
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 mb-8">
+                    <div class="flex flex-col items-center">
+                        <i class="fas fa-cut text-primary text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-dark mb-2">Pattern Making</h3>
+                        <p class="text-sm text-gray-600">Precise sample creation</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block text-primary"><i class="fas fa-chevron-right"></i></div>
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 mb-8">
+                    <div class="flex flex-col items-center">
+                        <i class="fas fa-shopping-cart text-primary text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-dark mb-2">Order</h3>
+                        <p class="text-sm text-gray-600">Confirming production details</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block text-primary"><i class="fas fa-chevron-right"></i></div>
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 mb-8">
+                    <div class="flex flex-col items-center">
+                        <i class="fas fa-check-circle text-primary text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-dark mb-2">Quality Control</h3>
+                        <p class="text-sm text-gray-600">Strict quality assurance</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block text-primary"><i class="fas fa-chevron-right"></i></div>
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 mb-8">
+                    <div class="flex flex-col items-center">
+                        <i class="fas fa-shipping-fast text-primary text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-dark mb-2">Shipping</h3>
+                        <p class="text-sm text-gray-600">Safe and fast delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Modal -->
+    <div id="inquiryModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+        <div class="container mx-auto px-4 h-full flex items-center justify-center">
+            <div class="bg-white rounded-lg p-8 max-w-md w-full">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-dark">Product Inquiry</h3>
+                    <button onclick="closeInquiryForm()" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <form name="product-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-4">
+                    <input type="hidden" name="form-name" value="product-inquiry" />
+                    <input type="hidden" name="product" id="inquiryProduct" />
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    <div>
+                        <label for="inquiryName" class="block text-gray-700 mb-1">Your Name*</label>
+                        <input type="text" id="inquiryName" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="inquiryEmail" class="block text-gray-700 mb-1">Email*</label>
+                        <input type="email" id="inquiryEmail" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="inquiryPhone" class="block text-gray-700 mb-1">WhatsApp/Phone*</label>
+                        <input type="tel" id="inquiryPhone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="inquiryQuantity" class="block text-gray-700 mb-1">Estimated Order Quantity</label>
+                        <select id="inquiryQuantity" name="quantity" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                            <option value="">Select quantity range</option>
+                            <option value="100-500">100-500 pcs</option>
+                            <option value="500-1000">500-1,000 pcs</option>
+                            <option value="1000-5000">1,000-5,000 pcs</option>
+                            <option value="5000+">5,000+ pcs</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="inquiryMessage" class="block text-gray-700 mb-1">Additional Requirements</label>
+                        <textarea id="inquiryMessage" name="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-3 px-4 rounded-md transition duration-300">Submit Inquiry</button>
+                </form>
+                <p class="text-sm text-gray-500 mt-4">We'll respond within 24 hours with pricing and details.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-tshirt text-primary text-3xl mr-2"></i>
+                        <span class="text-2xl font-bold text-white">Chic<span class="text-primary">upup</span></span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Premium women's clothing manufacturer with 15+ years of excellence in design and production.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-primary"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-primary"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover:text-primary"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-primary">Home</a></li>
+                        <li><a href="/#products" class="hover:text-primary">Products</a></li>
+                        <li><a href="/#about" class="hover:text-primary">About Us</a></li>
+                        <li><a href="/#services" class="hover:text-primary">Services</a></li>
+                        <li><a href="/#contact" class="hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-primary">Dresses</a></li>
+                        <li><a href="#" class="hover:text-primary">Tops & Blouses</a></li>
+                        <li><a href="#" class="hover:text-primary">Skirts</a></li>
+                        <li><a href="#" class="hover:text-primary">Pants & Jeans</a></li>
+                        <li><a href="#" class="hover:text-primary">Outerwear</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-300 mb-4">Subscribe to get updates on new products and special offers.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-md focus:outline-none">
+                        <button class="bg-primary hover:bg-red-600 text-white px-4 py-2 rounded-r-md transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="mt-4">
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:anna@chicupup.com" class="hover:text-primary">anna@chicupup.com</a>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:info@chicupup.com" class="hover:text-primary">info@chicupup.com</a>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <a href="tel:+8615604063085" class="hover:text-primary">+86 15604063085</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2023 Chicupup. All rights reserved.</p>
+                <div class="mt-4 md:mt-0">
+                    <a href="#" class="text-gray-300 hover:text-primary mx-2">Privacy Policy</a>
+                    <a href="#" class="text-gray-300 hover:text-primary mx-2">Terms of Service</a>
+                    <a href="#" class="text-gray-300 hover:text-primary mx-2">Help</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Inquiry form functions
+        function openInquiryForm(productName) {
+            document.getElementById('inquiryModal').classList.remove('hidden');
+            document.getElementById('inquiryProduct').value = productName;
+        }
+
+        function closeInquiryForm() {
+            document.getElementById('inquiryModal').classList.add('hidden');
+        }
+
+        // Sort products by newest first (products with 'New' tag)
+        const productsGrid = document.querySelector('.grid');
+        const productCards = Array.from(document.querySelectorAll('.product-card'));
+        
+        // Sort products - newest first
+        const sortedCards = [...productCards].sort((a, b) => {
+            return a.querySelector('.bg-primary') ? -1 : (b.querySelector('.bg-primary') ? 1 : 0);
+        });
+        
+        // Reorder the products
+        sortedCards.forEach(card => productsGrid.appendChild(card));
+    </script>
+</body>
+</html>
