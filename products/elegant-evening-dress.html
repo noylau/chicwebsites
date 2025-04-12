@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP09799B5C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HP09799B5C');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Evening Dress - Chicupup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B6B',
+                        secondary: '#4ECDC4',
+                        dark: '#292F36',
+                        light: '#F7FFF7'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        input, textarea, select {
+            color: black !important;
+        }
+        .color-option input:checked + span {
+            border: 2px solid #FF6B6B;
+        }
+        .size-option input:checked + span {
+            background-color: #FF6B6B;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header with Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-tshirt text-primary text-3xl mr-2"></i>
+                <span class="text-2xl font-bold text-dark">Chic<span class="text-primary">upup</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="/" class="text-dark hover:text-primary font-medium">Home</a>
+                <a href="/dress.html" class="text-dark hover:text-primary font-medium">Products</a>
+                <a href="/#about" class="text-dark hover:text-primary font-medium">About Us</a>
+                <a href="/#services" class="text-dark hover:text-primary font-medium">Services</a>
+                <a href="/#contact" class="text-dark hover:text-primary font-medium">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="mailto:anna@chicupup.com" class="hidden md:flex items-center text-dark hover:text-primary mr-4">
+                    <i class="fas fa-envelope mr-2"></i>
+                    anna@chicupup.com
+                </a>
+                <a href="mailto:info@chicupup.com" class="hidden md:flex items-center text-dark hover:text-primary mr-4">
+                    <i class="fas fa-envelope mr-2"></i>
+                    info@chicupup.com
+                </a>
+                <a href="tel:+8615604063085" class="hidden md:flex items-center text-dark hover:text-primary">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    +86 15604063085
+                </a>
+                <button class="md:hidden text-dark" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="/" class="text-dark hover:text-primary font-medium py-2">Home</a>
+                <a href="/dress.html" class="text-dark hover:text-primary font-medium py-2">Products</a>
+                <a href="/#about" class="text-dark hover:text-primary font-medium py-2">About Us</a>
+                <a href="/#services" class="text-dark hover:text-primary font-medium py-2">Services</a>
+                <a href="/#contact" class="text-dark hover:text-primary font-medium py-2">Contact</a>
+                <div class="flex flex-col space-y-2 pt-2 border-t border-gray-200">
+                    <a href="mailto:anna@chicupup.com" class="flex items-center text-dark hover:text-primary">
+                        <i class="fas fa-envelope mr-2"></i>
+                        anna@chicupup.com
+                    </a>
+                    <a href="mailto:info@chicupup.com" class="flex items-center text-dark hover:text-primary">
+                        <i class="fas fa-envelope mr-2"></i>
+                        info@chicupup.com
+                    </a>
+                    <a href="tel:+8615604063085" class="flex items-center text-dark hover:text-primary">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        +86 15604063085
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Breadcrumb -->
+    <div class="bg-white py-4 shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center text-sm text-gray-500">
+                <a href="/" class="hover:text-primary">Home</a>
+                <span class="mx-2"><i class="fas fa-chevron-right text-xs"></i></span>
+                <a href="/dress.html" class="hover:text-primary">Dresses</a>
+                <span class="mx-2"><i class="fas fa-chevron-right text-xs"></i></span>
+                <span class="text-primary">Elegant Evening Dress</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row -mx-4">
+                <!-- Product Images -->
+                <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+                    <div class="sticky top-24">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img id="mainImage" src="https://images.unsplash.com/photo-1612336307429-8a898d10e223?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Elegant Evening Dress" class="w-full h-auto object-cover">
+                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm">New</div>
+                        </div>
+                        <div class="grid grid-cols-4 gap-2">
+                            <div class="cursor-pointer rounded-md overflow-hidden border-2 border-primary">
+                                <img src="https://images.unsplash.com/photo-1612336307429-8a898d10e223?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Elegant Evening Dress - Front" class="w-full h-24 object-cover" onclick="changeMainImage(this.src)">
+                            </div>
+                            <div class="cursor-pointer rounded-md overflow-hidden border-2 border-transparent hover:border-primary">
+                                <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1530&q=80" alt="Elegant Evening Dress - Side" class="w-full h-24 object-cover" onclick="changeMainImage(this.src)">
+                            </div>
+                            <div class="cursor-pointer rounded-md overflow-hidden border-2 border-transparent hover:border-primary">
+                                <img src="https://images.unsplash.com/photo-1562137369-1a1a0bc66744?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Elegant Evening Dress - Back" class="w-full h-24 object-cover" onclick="changeMainImage(this.src)">
+                            </div>
+                            <div class="cursor-pointer rounded-md overflow-hidden border-2 border-transparent hover:border-primary">
+                                <img src="https://images.unsplash.com/photo-1550639525-c97d455acf70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1326&q=80" alt="Elegant Evening Dress - Detail" class="w-full h-24 object-cover" onclick="changeMainImage(this.src)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="w-full lg:w-1/2 px-4">
+                    <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">Elegant Evening Dress</h1>
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-500 text-sm">Based on customer feedback</span>
+                    </div>
+                    
+                    <div class="border-t border-b border-gray-200 py-4 mb-6">
+                        <h2 class="text-xl font-semibold mb-2">Product Description</h2>
+                        <p class="text-gray-600 mb-4">This stunning Elegant Evening Dress is perfect for formal occasions, galas, and special events. Crafted with premium materials and exquisite attention to detail, this dress offers both sophistication and comfort.</p>
+                        
+                        <h3 class="font-semibold text-dark mb-2">Key Features:</h3>
+                        <ul class="list-disc list-inside text-gray-600 mb-4 space-y-1">
+                            <li>Luxurious satin fabric with slight stretch for comfort</li>
+                            <li>Elegant floor-length design with side slit</li>
+                            <li>Flattering fitted silhouette with subtle mermaid flare</li>
+                            <li>Delicate beading detail on bodice</li>
+                            <li>Hidden back zipper closure</li>
+                            <li>Fully lined for smooth wear</li>
+                        </ul>
+                        
+                        <h3 class="font-semibold text-dark mb-2">Material Composition:</h3>
+                        <ul class="list-disc list-inside text-gray-600 mb-4 space-y-1">
+                            <li>Main Fabric: 92% Polyester, 8% Spandex</li>
+                            <li>Lining: 100% Polyester</li>
+                            <li>Embellishment: Glass beads and sequins</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Color Options -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-3">Available Colors</h3>
+                        <div class="flex space-x-3">
+                            <label class="color-option cursor-pointer">
+                                <input type="radio" name="color" value="Black" class="sr-only" checked>
+                                <span class="w-10 h-10 rounded-full flex items-center justify-center border-2 border-transparent bg-black"></span>
+                            </label>
+                            <label class="color-option cursor-pointer">
+                                <input type="radio" name="color" value="Red" class="sr-only">
+                                <span class="w-10 h-10 rounded-full flex items-center justify-center border-2 border-transparent bg-red-600"></span>
+                            </label>
+                            <label class="color-option cursor-pointer">
+                                <input type="radio" name="color" value="Navy" class="sr-only">
+                                <span class="w-10 h-10 rounded-full flex items-center justify-center border-2 border-transparent bg-blue-900"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Size Options -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-3">Select Size</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <label class="size-option cursor-pointer">
+                                <input type="radio" name="size" value="XS" class="sr-only">
+                                <span class="px-4 py-2 border border-gray-300 rounded-md text-center font-medium hover:border-primary">XS</span>
+                            </label>
+                            <label class="size-option cursor-pointer">
+                                <input type="radio" name="size" value="S" class="sr-only">
+                                <span class="px-4 py-2 border border-gray-300 rounded-md text-center font-medium hover:border-primary">S</span>
+                            </label>
+                            <label class="size-option cursor-pointer">
+                                <input type="radio" name="size" value="M" class="sr-only" checked>
+                                <span class="px-4 py-2 border border-gray-300 rounded-md text-center font-medium hover:border-primary">M</span>
+                            </label>
+                            <label class="size-option cursor-pointer">
+                                <input type="radio" name="size" value="L" class="sr-only">
+                                <span class="px-4 py-2 border border-gray-300 rounded-md text-center font-medium hover:border-primary">L</span>
+                            </label>
+                        </div>
+                        <a href="#size-guide" class="text-primary text-sm mt-2 inline-block hover:underline">Size Guide</a>
+                    </div>
+                    
+                    <!-- Order Information -->
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h3 class="text-lg font-semibold mb-3">Order Information</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span><strong>MOQ (Minimum Order Quantity):</strong> 100 pieces per color/style</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span><strong>Lead Time:</strong> 30-45 days after order confirmation and deposit</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span><strong>Payment Terms:</strong> 30% deposit, 70% balance before shipment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span><strong>Payment Methods:</strong> T/T (Bank Transfer), L/C, Western Union</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span><strong>Shipping:</strong> FOB, CIF, EXW available</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span><strong>Customization:</strong> Logo, packaging, size modifications available</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Inquiry Button -->
+                    <button onclick="openInquiryForm('Elegant Evening Dress')" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-3 px-6 rounded-md transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-envelope mr-2"></i> Request Quote
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Product Details Tabs -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="border-b border-gray-200 mb-8">
+                <div class="flex flex-wrap -mb-px">
+                    <button class="tab-button text-lg font-medium py-4 px-6 border-b-2 border-primary text-primary" data-tab="details">Details & Specifications</button>
+                    <button class="tab-button text-lg font-medium py-4 px-6 border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="size-guide">Size Guide</button>
+                    <button class="tab-button text-lg font-medium py-4 px-6 border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-tab="shipping">Shipping & Returns</button>
+                </div>
+            </div>
+            
+            <!-- Tab Content -->
+            <div class="tab-content" id="details">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Product Specifications</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold mb-2">Design Features</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Sleeveless design with elegant neckline</li>
+                                <li>Form-fitting silhouette with mermaid flare</li>
+                                <li>Side slit for ease of movement</li>
+                                <li>Beaded embellishment on bodice</li>
+                                <li>Hidden back zipper</li>
+                                <li>Floor-length hemline</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Care Instructions</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Dry clean only</li>
+                                <li>Do not bleach</li>
+                                <li>Do not tumble dry</li>
+                                <li>Cool iron if needed</li>
+                                <li>Store on padded hangers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <h4 class="font-semibold mb-2">Production Capabilities</h4>
+                        <p class="text-gray-600 mb-4">Our factory specializes in high-quality evening wear and formal dresses with over 15 years of experience. We have a monthly production capacity of 10,000 pieces and employ strict quality control measures at every stage of production.</p>
+                        
+                        <h4 class="font-semibold mb-2">Customization Options</h4>
+                        <p class="text-gray-600">We offer various customization options including:</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 mt-2">
+                            <li>Custom fabric colors and materials</li>
+                            <li>Size modifications and grading</li>
+                            <li>Design alterations (neckline, sleeve length, etc.)</li>
+                            <li>Custom labeling and packaging</li>
+                            <li>Sample development before bulk production</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" id="size-guide">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Size Chart (in inches)</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead>
+                                <tr>
+                                    <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Size</th>
+                                    <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Bust</th>
+                                    <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Waist</th>
+                                    <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Hip</th>
+                                    <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Length</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">XS</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">31-32</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">24-25</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">34-35</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">58</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">S</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">33-34</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">26-27</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">36-37</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">58</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">M</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">35-36</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">28-29</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">38-39</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">59</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">L</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">37-38</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">30-31</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">40-41</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">59</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <h4 class="font-semibold mb-2">How to Measure</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li><strong>Bust:</strong> Measure around the fullest part of your bust, keeping the tape parallel to the floor.</li>
+                            <li><strong>Waist:</strong> Measure around your natural waistline, the narrowest part of your waist.</li>
+                            <li><strong>Hip:</strong> Measure around the fullest part of your hips, about 8 inches below your waistline.</li>
+                            <li><strong>Length:</strong> Measure from the highest point of the shoulder to the floor.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-blue-50 rounded-md">
+                        <p class="text-blue-800"><i class="fas fa-info-circle mr-2"></i> Custom sizing is available for bulk orders. Please contact us for more information.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" id="shipping">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Shipping Information</h3>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold mb-2">Shipping Methods</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li><strong>FOB (Free On Board):</strong> We deliver the goods to the designated port of shipment. Buyer assumes cost and risk once goods are loaded on the vessel.</li>
+                            <li><strong>CIF (Cost, Insurance, and Freight):</strong> We cover costs, insurance, and freight to bring the goods to the port of destination specified by the buyer.</li>
+                            <li><strong>EXW (Ex Works):</strong> Buyer assumes all transportation costs and risks from our factory.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold mb-2">Estimated Delivery Times</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li><strong>Production Time:</strong> 30-45 days after order confirmation and deposit</li>
+                            <li><strong>Shipping Time:</strong>
+                                <ul class="list-disc list-inside ml-6 mt-1">
+                                    <li>Sea Freight: 15-40 days depending on destination</li>
+                                    <li>Air Freight: 3-7 days depending on destination</li>
+                                    <li>Express Shipping (for samples): 3-5 days</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold mb-2">Packaging</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>Individual polybag for each dress</li>
+                            <li>Cardboard inserts to maintain shape</li>
+                            <li>Sturdy export cartons with reinforced corners</li>
+                            <li>Custom packaging available upon request</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold mb-2">Return Policy</h4>
+                        <p class="text-gray-600 mb-2">For wholesale orders:</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>Quality issues must be reported within 7 days of receipt</li>
+                            <li>Photographic evidence of defects required</li>
+                            <li>Replacement or partial refund available for confirmed quality issues</li>
+                            <li>Custom-made orders cannot be returned unless there are significant quality issues</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Related Products -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-dark mb-8">You May Also Like</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Related Product 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1483&q=80" alt="Summer Floral Dress" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-dark mb-2">Summer Floral Dress</h3>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span class="px-2 py-1 bg-gray-100 rounded-full text-xs">White</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded-full text-xs">Pink</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded-full text-xs">Blue</span>
+                        </div>
+                        <a href="/dress.html" class="text-primary hover:text-red-600 text-sm font-medium">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Related Product 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1550639525-c97d455acf70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1326&q=80" alt="Party Cocktail Dress" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-dark mb-2">Party Cocktail Dress</h3>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span class="px-2 py-1 bg-gray-100 rounded-full text-xs">Black</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded-full text-xs">Gold</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded-full text-xs">Silver</span>
+                        </div>
+                        <a href="/dress.html" class="text-primary hover:text-red-600 text-sm font-medium">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Related Product 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1588&q=80" alt="Wrap Midi Dress" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-dark mb-2">Wrap Midi Dress</h3>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span class="px-2 py-1 bg-gray-100 rounded-full text-xs">Red</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded-full text-xs">Navy</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded-full text-xs">Purple</span>
+                        </div>
+                        <a href="/dress.html" class="text-primary hover:text-red-600 text-sm font-medium">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Related Product 4 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1530&q=80" alt="A-Line Mini Dress" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-dark mb-2">A-Line Mini Dress</h3>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span class="px-2 py-1 bg-gray-100 rounded-full text-xs">Pink</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded-full text-xs">Blue</span>
+                            <span class="px-2 py-1 bg-gray-100 rounded-full text-xs">Yellow</span>
+                        </div>
+                        <a href="/dress.html" class="text-primary hover:text-red-600 text-sm font-medium">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Modal -->
+    <div id="inquiryModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+        <div class="container mx-auto px-4 h-full flex items-center justify-center">
+            <div class="bg-white rounded-lg p-8 max-w-md w-full">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-dark">Product Inquiry</h3>
+                    <button onclick="closeInquiryForm()" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <form name="product-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-4">
+                    <input type="hidden" name="form-name" value="product-inquiry" />
+                    <input type="hidden" name="product" id="inquiryProduct" />
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    <div>
+                        <label for="inquiryName" class="block text-gray-700 mb-1">Your Name*</label>
+                        <input type="text" id="inquiryName" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="inquiryEmail" class="block text-gray-700 mb-1">Email*</label>
+                        <input type="email" id="inquiryEmail" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="inquiryPhone" class="block text-gray-700 mb-1">WhatsApp/Phone*</label>
+                        <input type="tel" id="inquiryPhone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="inquiryQuantity" class="block text-gray-700 mb-1">Estimated Order Quantity</label>
+                        <select id="inquiryQuantity" name="quantity" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                            <option value="">Select quantity range</option>
+                            <option value="100-500">100-500 pcs</option>
+                            <option value="500-1000">500-1,000 pcs</option>
+                            <option value="1000-5000">1,000-5,000 pcs</option>
+                            <option value="5000+">5,000+ pcs</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="inquiryMessage" class="block text-gray-700 mb-1">Additional Requirements</label>
+                        <textarea id="inquiryMessage" name="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-3 px-4 rounded-md transition duration-300">Submit Inquiry</button>
+                </form>
+                <p class="text-sm text-gray-500 mt-4">We'll respond within 24 hours with pricing and details.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-tshirt text-primary text-3xl mr-2"></i>
+                        <span class="text-2xl font-bold text-white">Chic<span class="text-primary">upup</span></span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Premium women's clothing manufacturer with 15+ years of excellence in design and production.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-primary"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-primary"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover:text-primary"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-primary">Home</a></li>
+                        <li><a href="/#products" class="hover:text-primary">Products</a></li>
+                        <li><a href="/#about" class="hover:text-primary">About Us</a></li>
+                        <li><a href="/#services" class="hover:text-primary">Services</a></li>
+                        <li><a href="/#contact" class="hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/dress.html" class="hover:text-primary">Dresses</a></li>
+                        <li><a href="#" class="hover:text-primary">Tops & Blouses</a></li>
+                        <li><a href="#" class="hover:text-primary">Skirts</a></li>
+                        <li><a href="#" class="hover:text-primary">Pants & Jeans</a></li>
+                        <li><a href="#" class="hover:text-primary">Outerwear</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-300 mb-4">Subscribe to get updates on new products and special offers.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-md focus:outline-none">
+                        <button class="bg-primary hover:bg-red-600 text-white px-4 py-2 rounded-r-md transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="mt-4">
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:anna@chicupup.com" class="hover:text-primary">anna@chicupup.com</a>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:info@chicupup.com" class="hover:text-primary">info@chicupup.com</a>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <a href="tel:+8615604063085" class="hover:text-primary">+86 15604063085</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2023 Chicupup. All rights reserved.</p>
+                <div class="mt-4 md:mt-0">
+                    <a href="#" class="text-gray-300 hover:text-primary mx-2">Privacy Policy</a>
+                    <a href="#" class="text-gray-300 hover:text-primary mx-2">Terms of Service</a>
+                    <a href="#" class="text-gray-300 hover:text-primary mx-2">Help</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Inquiry form functions
+        function openInquiryForm(productName) {
+            document.getElementById('inquiryModal').classList.remove('hidden');
+            document.getElementById('inquiryProduct').value = productName;
+        }
+
+        function closeInquiryForm() {
+            document.getElementById('inquiryModal').classList.add('hidden');
+        }
+        
+        // Product image gallery
+        function changeMainImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+        
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active state from all buttons
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('border-primary', 'text-primary');
+                    btn.classList.add('border-transparent', 'text-gray-500');
+                });
+                
+                // Add active state to clicked button
+                button.classList.remove('border-transparent', 'text-gray-500');
+                button.classList.add('border-primary', 'text-primary');
+                
+                // Hide all tab contents
+                tabContents.forEach(content => {
+                    content.classList.add('hidden');
+                });
+                
+                // Show the selected tab content
+                const tabId = button.getAttribute('data-tab');
+                document.getElementById(tabId).classList.remove('hidden');
+            });
+        });
+        
+        // Initialize color and size selection
+        document.querySelectorAll('.color-option input').forEach(input => {
+            input.addEventListener('change', function() {
+                if (this.checked) {
+                    console.log('Selected color:', this.value);
+                }
+            });
+        });
+        
+        document.querySelectorAll('.size-option input').forEach(input => {
+            input.addEventListener('change', function() {
+                if (this.checked) {
+                    console.log('Selected size:', this.value);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
