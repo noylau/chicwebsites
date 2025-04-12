@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Floral Summer Dress",
+    "category": "Dresses",
+    "price": 29.99,
+    "images": [
+      "/images/dress-1.jpg",
+      "/images/dress-2.jpg"
+    ],
+    "material": "95% Cotton, 5% Spandex",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["#FF6B6B", "#4ECDC4", "#292F36"],
+    "labels": ["New Arrival", "Best Seller"],
+    "payment_terms": "30% deposit, balance before shipment"
+  },
+  {
+    "id": 2,
+    "title": "Yoga Set",
+    "category": "Activewear",
+    "price": 49.99,
+    "images": [
+      "/images/yoga-1.jpg",
+      "/images/yoga-2.jpg"
+    ],
+    "material": "88% Polyester, 12% Elastane",
+    "sizes": ["XS", "S", "M"],
+    "colors": ["#000000", "#FFFFFF"],
+    "labels": ["Eco-Friendly"],
+    "payment_terms": "50% deposit, balance after QC approval"
+  }
+]
